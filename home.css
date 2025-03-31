@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #09766d;
+    margin: 0;
+}
+
+/* Controls Container */
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Control Buttons */
+.control-btn {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #0088ff, #0044aa);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 136, 255, 0.8);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Middle Row Styling */
+.middle-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Stop Button (Square) */
+#stop {
+    background: radial-gradient(circle, #ff4500, #8b0000);
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Button Hover & Click Effects */
+.control-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0, 136, 255, 1);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgba(0, 136, 255, 0.5);
+}
+
+/* Stop Button Special Effects */
+#stop:hover {
+    box-shadow: 0px 0px 25px rgba(255, 69, 0, 1);
+}
+
+#stop:active {
+    box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.5);
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: radial-gradient(circle, #ffcc00, #aa7700);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 204, 0, 1);
+}
+
+.back-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .control-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
